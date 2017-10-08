@@ -1,0 +1,49 @@
+"Enter a positive number:"
+inc 8
+
+lit 0
+lit 24
+lit 25
+
+la 0 32
+in 0
+
+la 0 36
+lit 2
+sto
+
+.loop
+
+lv 0 32
+lv 0 36
+rel 2
+tjmp .end
+mod
+lit 0
+rel 2
+tjmp .divide
+fjmp .addOne
+
+
+.addOne
+lv 0 36
+lit 1
+add
+la 0 36
+sto
+jmp .loop
+
+.divide
+lv 0 36
+out 0
+out 3
+lv 0 32
+lv 0 36
+div
+la 0 32
+sto
+jmp .loop
+
+
+.end
+halt

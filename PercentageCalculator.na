@@ -1,0 +1,34 @@
+"Maximum points possible: Points achieved:"
+inc 12
+ 
+lit 0 
+lit 24
+lit 25
+out 2
+out 3
+
+la 0 32
+in 0
+
+out 3
+lit 25
+lit 16
+lit 17
+out 2
+out 3
+
+la 0 36
+in 0
+
+lv 0 36
+lv 0 32
+div
+lit 100
+mul
+sto
+lv 0 40
+lit 3
+out 0
+out 3
+
+halt
